@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-culj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-ysks-tenant/test-annotations-app-eurs/test-annotations-culj@sha256:06038796c796be4fd0f3855ccec4ae5331c1c4aa72a46b1afd6e097c827bca74
+        name: my-nginx
+        resources: {}
+status: {}
